@@ -16,6 +16,6 @@ call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " 括弧補完
   Plug 'itmammoth/doorboy.vim'
-	" タグ補完
+  " タグ補完
   Plug 'alvan/vim-closetag'
 call plug#end()
