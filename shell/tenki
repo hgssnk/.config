@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then ARG="Tokyo"; fi
+curl wttr.in/${ARG}${1}
+exit 0
