@@ -14,6 +14,6 @@ set mouse=a
 " Plugins
 call plug#begin()
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-	Plug 'itmammoth/doorboy.vim'
-	Plug 'alvan/vim-closetag'
+  Plug 'itmammoth/doorboy.vim'
+  Plug 'alvan/vim-closetag'
 call plug#end()
