@@ -12,7 +12,10 @@ set smartindent
 
 " Plugins
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}		"code補完
-  Plug 'itmammoth/doorboy.vim'											"括弧補完
-  Plug 'alvan/vim-closetag'													"タグ補完
+  " code補完
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " 括弧補完
+  Plug 'itmammoth/doorboy.vim'
+	" タグ補完
+  Plug 'alvan/vim-closetag'
 call plug#end()
