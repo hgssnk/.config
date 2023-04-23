@@ -9,11 +9,10 @@ set tabstop=2
 set clipboard+=unnamed
 set autoindent
 set smartindent
-set mouse=a
 
 " Plugins
 call plug#begin()
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'itmammoth/doorboy.vim'
-  Plug 'alvan/vim-closetag'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}		"code補完
+  Plug 'itmammoth/doorboy.vim'											"括弧補完
+  Plug 'alvan/vim-closetag'													"タグ補完
 call plug#end()
