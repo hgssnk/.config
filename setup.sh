@@ -11,3 +11,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # zsh, tmux
 echo "source ~/.config/tmux/.tmux.conf" >> ~/.tmux.conf
 echo -e "if [ -f ~/.config/zsh/.zshrc ]; then\n  source ~/.config/zsh/.zshrc\nfi" >> ~/.zshrc
+
+# nvim
+# :PlugInstall
+# :CocInstall coc-jedi
+# :CocInstall coc-tsserver

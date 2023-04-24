@@ -4,7 +4,7 @@
 
 # Alias
 alias rm="rm -i"
-alias ll="ls -la"
+alias ll="ls -lah"
 alias ..="cd .."
 alias conf="cd ~/.config/"
 alias python="python3"
@@ -12,7 +12,7 @@ alias pip="pip3"
 alias venv="cd ~/.config/venv/"
 alias vim="nvim"
 alias drive="mkdir -p ~/Google\ Drive/マイドライブ/01_workspaces/(date +%Y)/(date +%Y%m)/ && cd ~/Google\ Drive/マイドライブ/01_workspaces/(date +%Y)/(date +%Y%m)/"
-alias pj="cd ~/.config/pj/"
+alias pj="cd ~/pj/"
 
 # Path
 set -x PATH ~/.config/shell/ $PATH
@@ -20,3 +20,4 @@ export LSCOLORS=xxxxxxxxxxxxxxxxxxxxxx
 
 # Startup
 tmux
+cd ~/pj/

@@ -8,11 +8,11 @@ alias pip="pip3"
 alias venv="cd ~/.config/venv/"
 alias vim="nvim"
 alias drive="mkdir -p ${HOME}/Google\ Drive/マイドライブ/01_workspaces/$(date +%Y)/$(date +%Y%m)/ && cd ${HOME}/Google\ Drive/マイドライブ/01_workspaces/$(date +%Y)/$(date +%Y%m)/"
-alias pj="cd ~/.config/pj/"
+alias pj="cd ~/pj/"
 
 # Path
 PATH=$PATH:~/.config/shell/
-PS1='%n %c $ '
+PS1='%c $ '
 
 # Key-Bind
 bindkey \^U backward-kill-line
@@ -25,4 +25,3 @@ fi
 # Startup
 #tmux
 /usr/local/bin/fish
-
