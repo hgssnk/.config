@@ -11,7 +11,7 @@ alias drive="mkdir -p ${HOME}/Google\ Drive/マイドライブ/01_workspaces/$(d
 alias pj="cd ~/pj/"
 
 # Path
-PATH=$PATH:~/.config/shell/
+PATH=$PATH:~/.config/shell/mac
 PS1='%c $ '
 
 # Key-Bind

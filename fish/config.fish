@@ -15,7 +15,7 @@ alias drive="mkdir -p ~/Google\ Drive/マイドライブ/01_workspaces/(date +%Y
 alias pj="cd ~/pj/"
 
 # Path
-set -x PATH ~/.config/shell/ $PATH
+set -x PATH ~/.config/shell/mac/ $PATH
 export LSCOLORS=xxxxxxxxxxxxxxxxxxxxxx
 
 # Startup
