@@ -1,3 +1,4 @@
+f
 # Alias
 alias rm="rm -i"
 alias ll="ls -la"
@@ -11,7 +12,7 @@ alias drive="mkdir -p ${HOME}/Google\ Drive/マイドライブ/01_workspaces/$(d
 alias pj="cd ~/pj/"
 
 # Path
-PATH=$PATH:~/.config/shell/mac
+PATH=~/.config/shell/mac:$PATH
 PS1='%c $ '
 
 # Key-Bind
@@ -25,3 +26,6 @@ fi
 # Startup
 #tmux
 /usr/local/bin/fish
+
+# JAVA
+JAVA_HOME=/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/

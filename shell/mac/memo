@@ -1,6 +1,21 @@
 #!/bin/bash
+FILE="${HOME}/Google Drive/マイドライブ/01_workspaces/$(date +%Y)/$(date +%Y%m)/$(date +%Y%m%d.txt)"
 DIR="${HOME}/Google Drive/マイドライブ/01_workspaces/$(date +%Y)/$(date +%Y%m)"
-if [ -d "${DIR}"  ]; then
-	mkdir "${DIR}"
+DIR2="${HOME}/Google Drive/マイドライブ/01_workspaces/$(date +%Y)"
+
+if [ $# -eq 0 ] && [ ! -e "${FILE}"  ]; then
+	mkdir -p "${DIR}"
+	cp -pv "$(find "${DIR2}" -name "$(date +%Y*.txt)" | sort -n | tail -1)" "$FILE"
+	echo cp
+	#open "$FILE"
+	mvim "$FILE"
+	echo open
+elif [ -f "$FILE" ]; then
+	#open "$FILE"
+	mvim "$FILE"
+else
+	find "${DIR}" -name "$(date -v-${1}d +%Y%m%d.txt)" -exec open {} +
 fi
-nvim "${DIR}/$(date +%Y%m%d).txt"
+
+
+exit 0
